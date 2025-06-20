@@ -23,6 +23,7 @@ Este proyecto implementa un **Árbol Binario de Búsqueda (ABB)** para apoyar el
 - Verificación de equilibrio paso a paso con mensajes detallados
 
 ## 🧪 Ejemplo de Ejecución
+![Ejercicio](image-1.png)
 
 ```text
 Hello, World!
