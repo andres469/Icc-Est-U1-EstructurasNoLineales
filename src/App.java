@@ -14,6 +14,27 @@ public class App {
         ab.insert(14);
         ab.insert(19);
         ab.imprimirArbol();
+        ab.imprimirArbol2();
+        ab.imprimirBalanceDeCadaNodo();
+        System.out.println("Peso del árbol: " + ab.getPesoDelArbol());
+       ab.verificarEquilibrioPasoAPaso();
+
+
+
+
+
+        if (ab.findeValue(23)) {
+            System.out.println("Encontró valor 23");
+            } else {
+                System.out.println("No encontró el valor 23");
+            }
+
+            if (ab.findeValue(77)) {
+                System.out.println("Encontró valor 77");
+            } else {
+                System.out.println("No encontró el valor 77");
+            }
+
 
         
        
