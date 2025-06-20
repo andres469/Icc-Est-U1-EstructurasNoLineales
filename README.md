@@ -1,38 +1,38 @@
-# BinaryTree - Árbol Binario en Java
+# 🌳 BinaryTree - Árbol Binario de Búsqueda en Java
 
-Este proyecto implementa un Árbol Binario de Búsqueda (ABB) con diversas funciones útiles para el aprendizaje de estructuras de datos.
+Este proyecto implementa un **Árbol Binario de Búsqueda (ABB)** para apoyar el aprendizaje de estructuras de datos, mostrando cómo manipular árboles con métodos básicos y avanzados.
 
-## 📦 Estructura
+## 📁 Estructura del Proyecto
 
-- `App.java`: Clase principal donde se insertan nodos y se ejecutan las funcionalidades del árbol.
-- `BinaryTree.java`: Lógica del árbol binario, incluyendo inserciones, recorridos, altura, balance, y peso.
-- `Node.java`: Clase auxiliar que representa un nodo del árbol (debes definirla si aún no la tienes).
+- `App.java`: Punto de entrada. Permite insertar nodos y ejecutar funcionalidades del árbol.
+- `BinaryTree.java`: Lógica del ABB: inserción, recorridos, altura, peso, y balance.
+- `Node.java`: Representación de cada nodo del árbol con valor, hijos, y opcionalmente su altura.
 
 ## 🚀 Funcionalidades
 
-- Inserción de nodos con `insert(int value)`
+- `insert(int value)`: Inserta un nuevo nodo manteniendo el orden del ABB.
 - Recorridos del árbol:
-  - Preorden, Inorden, Postorden
+  - `preOrden()` → Nodo → Izquierda → Derecha
+  - `inOrden()` → Izquierda → Nodo → Derecha (valores ordenados)
+  - `postOrden()` → Izquierda → Derecha → Nodo
   - Impresión con altura de cada nodo
-- Búsqueda de un valor con `findeValue(int valor)`
-- Altura del árbol con `getHeightTree()`
-- Peso del árbol (número de nodos) con `getPesoDelArbol()`
-- Balance de cada nodo con `imprimirBalanceDeCadaNodo()`
+- `findeValue(int valor)`: Busca si un valor existe dentro del árbol
+- `getHeightTree()`: Devuelve la altura total del árbol
+- `getPesoDelArbol()`: Cuenta el número total de nodos
+- `imprimirBalanceDeCadaNodo()`: Imprime el balance de cada nodo (`altura izquierda - derecha`)
 - Verificación de equilibrio paso a paso con mensajes detallados
 
-## 🔍 Ejemplo de ejecución
-![captura](image.png)
+## 🧪 Ejemplo de Ejecución
+
 ```text
 Hello, World!
-9 14 17 19 23 50 54 76
-9 (h=1),14 (h=2),17 (h=1),19 (h=3),23 (h=2),50 (h=4),54 (h=1),76 (h=2)
-Nodo 9 =>Balance = 0
-Nodo 14 =>Balance = 1
+9 14 17 19 23 50 54 76          ← inOrden
+9(h=1),14(h=2),17(h=1),...      ← Alturas de cada nodo
+Nodo 14 => Balance = 1          ← Balance de nodos
 ...
 Peso del árbol: 8
 Nodo 9 => true
-Nodo 14 => true
 Nodo 50 => false desde el nodo 50
-Arbol desequilibrado
+Árbol desequilibrado
 Encontró valor 23
 No encontró el valor 77
